@@ -5,7 +5,7 @@ const { ccclass, property } = _decorator;
 @ccclass('Login')
 export class Login extends Component {
     start() {
-        this.node.getChildByName("Btn_Login").on("click",this.login);
+        this.node.getChildByName("Btn_Login").on("click",this.login.bind(this));
 
         this.node.getChildByName("Btn_Reg").on("click", () => {
             console.log("register")
