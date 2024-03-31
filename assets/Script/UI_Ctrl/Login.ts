@@ -1,5 +1,6 @@
 import { _decorator, assert, assetManager, Component, instantiate, Node, Prefab } from 'cc';
 import { Main } from './Main';
+import { BattleManager } from '../Manager/BattleManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('Login')
